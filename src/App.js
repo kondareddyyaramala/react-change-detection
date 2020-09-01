@@ -11,19 +11,20 @@ export default function App() {
 
   return (
     <section>
-
+      {console.log('Rendering App component')}
+      <Header headerName={header}></Header>
+      <Details 
+          description={description}
+          summaryHeader={subheader}>
+      </Details>
+      <button onClick={() => setHeader('New')}>Update header name</button>
+      <br/>
+      <button onClick={() => setSubheader('New subheader')}>Update subheader name</button>
+      <br/>
+      <button onClick={() => setDescription('new description')}>Update description </button>
+      <br/>
+      <br/>
       <User/>
     </section>
   );
 }
-      // {console.log('Rendering App component')}
-      // <Header headerName={header}></Header>
-      // <Details 
-      //     description={description}
-      //     summaryHeader={subheader}>
-      // </Details>
-      // <button onClick={() => setHeader('New')}>Update header name</button>
-      // <br/>
-      // <button onClick={() => setSubheader('New subheader')}>Update subheader name</button>
-      // <br/>
-      // <button onClick={() => setDescription('new description')}>Update description </button>

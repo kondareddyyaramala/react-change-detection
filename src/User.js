@@ -22,14 +22,13 @@ export default function User() {
 
 
   useEffect(() => {
-
       console.log(`Current value :: ${firstName} :: Previous Value ${previousFirstName}`)
   }, [firstName])
 
 
   return (
     <>
-    <input value={firstName} onChange={e => setFirstName(e.target.value)}/>
+     User :: <input value={firstName} onChange={e => setFirstName(e.target.value)}/>
     </>
   );
 }
